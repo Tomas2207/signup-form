@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap");
+
 body {
   margin: 0;
 }
@@ -16,12 +20,13 @@ body {
 }
 
 .title {
-  position: absolute;
-  top: 100px;
+  position: relative;
+  top: 125px;
   left: 0px;
-  padding: 50px 195px;
+  padding: 0px 208px;
 
-  font-size: 3em;
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 5em;
   background-color: hsla(0, 0%, 4%, 0.24);
   color: rgba(255, 255, 255, 0.801);
   font-weight: bold;
@@ -39,7 +44,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
 
   text-align: center;
   font-size: 1.5em;
@@ -50,7 +55,7 @@ body {
 
 .form-container p {
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
 
   margin: 10px;
   line-height: 25px;
@@ -58,6 +63,11 @@ body {
 
 .form-title {
   text-align: start;
+  margin-bottom: 25px;
+  font-family: "Raleway", sans-serif;
+
+  font-size: 1.1em;
+  color: hsl(0, 1%, 20%);
 }
 
 .form {
@@ -69,4 +79,70 @@ body {
   align-items: flex-start;
 
   box-shadow: 10px 10px 8px #888888;
+}
+
+.form-label {
+  padding: 10px;
+  font-size: 0.9em;
+  font-family: "Raleway", sans-serif;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item > * {
+  align-self: flex-start;
+}
+
+.form-input {
+  -webkit-appearance: none;
+
+  width: 100%;
+  max-width: 425px;
+  border-radius: 5px;
+
+  padding: 0.5em;
+  font-size: 0.8em;
+  font-family: "Raleway", sans-serif;
+
+  outline: none;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+}
+
+.form-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 10px 16px;
+  margin: 60px 0 25px;
+
+  color: white;
+  background: hsl(258, 51%, 13%);
+  border: 2px solid hsl(258, 50%, 9%);
+  border-radius: 5px;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.form-btn:hover {
+  background: hsl(258, 60%, 22%);
+}
+
+.log-in {
+  align-self: flex-start;
+
+  margin-top: 25px;
+}
+
+.log-in a {
+  text-decoration: none;
+  color: hsl(258, 51%, 13%);
 }
