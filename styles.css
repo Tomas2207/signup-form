@@ -4,39 +4,38 @@
 
 body {
   margin: 0;
+  display: flex;
 }
 
 .img-title-container {
-  position: absolute;
-  height: 100%;
-}
+  background: url(images/idea.jpg);
+  background-size: 100%;
 
-.background-img img {
-  position: absolute;
-  height: 100%;
-  /* margin: 0;
-  padding: 0; */
-  /* z-index: -1; */
+  width: 35%;
+  height: 100vh;
 }
 
 .title {
   position: relative;
-  top: 125px;
-  left: 0px;
-  padding: 0px 208px;
+  top: 105px;
 
+  text-align: center;
   font-family: "Smooch Sans", sans-serif;
   font-size: 5em;
   background-color: hsla(0, 0%, 4%, 0.24);
-  color: rgba(255, 255, 255, 0.801);
+  color: rgba(255, 255, 255, 0.411);
   font-weight: bold;
+
+  padding: 40px;
+  border: 2px solid hsla(0, 0%, 4%, 0.048);
 }
 
 .svg img {
-  position: absolute;
-  top: 120px;
-  left: 90px;
-  height: 100px;
+  position: relative;
+  width: 50%;
+  top: -50px;
+  left: -35px;
+  height: 200px;
 }
 
 .form-container {
@@ -49,8 +48,8 @@ body {
   text-align: center;
   font-size: 1.5em;
 
-  padding-left: 800px;
-  padding-top: 100px;
+  padding-left: 150px;
+  padding-top: 50px;
 }
 
 .form-container p {
@@ -145,4 +144,8 @@ body {
 .log-in a {
   text-decoration: none;
   color: hsl(258, 51%, 13%);
+}
+
+.log-in a:hover {
+  color: hsl(258, 52%, 13%, 0.514);
 }
